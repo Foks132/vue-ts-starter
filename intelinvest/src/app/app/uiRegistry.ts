@@ -1,4 +1,4 @@
-import {EmptyComponent} from "../components/emptyComponent";
+import {EventInfo} from "../components/eventInfo";
 import {UI} from "@intelinvest/platform/src/app/ui";
 
 /**
@@ -12,6 +12,6 @@ export class UIRegistry {
     static init(): void {
         // TODO инициализация глобальных компонентов тут
         // компоненты
-        UI.component("empty-component", EmptyComponent);
+        UI.component("event-info", EventInfo);
     }
 }

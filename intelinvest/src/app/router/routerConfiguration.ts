@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import {RouteConfig} from "vue-router/types/router";
 import {EventsPage} from "../pages/eventsPage";
+import {EventPage} from "../pages/eventPage";
 
 Vue.use(VueRouter);
 
@@ -40,6 +41,14 @@ export class RouterConfiguration {
                 component: EventsPage,
                 meta: {
                     title: "События",
+                }
+            },
+            {
+                name: "event",
+                path: "/event",
+                component: EventPage,
+                meta: {
+                    title: "Информация о событии",
                 }
             }
         ];
